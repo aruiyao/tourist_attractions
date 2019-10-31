@@ -1,0 +1,244 @@
+page {
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular, PingFangSC;
+  font-weight: 400;
+  color: #A7A7A7;
+  line-height: 44rpx;
+}
+
+.fixed-area {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.music {
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  top: 82rpx;
+  right: 34rpx;
+  z-index: 2;
+}
+
+.rectangle {
+  width: 100%;
+  height: 80rpx;
+  background: #151314;
+}
+
+.banner {
+  position: relative;
+}
+
+.swiper-detail {
+  height: 50rpx;
+  padding-top: 14rpx;
+  padding-left: 15rpx
+}
+
+.swiper-detail image {
+  height: 100%;
+  width: 80%
+}
+
+.swipers {
+  height: 500rpx;
+  position: relative;
+}
+
+.swipers swiper-item image {
+  width: 100%;
+  height: 100%;
+}
+
+.wait {
+  height: 50rpx;
+  top: 30rpx;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.into3D {
+  height: 95rpx;
+  width: 250rpx;
+  position: absolute;
+  bottom: 25rpx;
+  right: 30rpx;
+}
+
+
+/*用来包裹所有的小圆点  */
+.dots {
+  width: 210rpx;
+  height: 20rpx;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  left: 20%;
+  transform: translateX(-50%);
+  bottom: 50rpx;
+}
+
+/*未选中时的小圆点样式 */
+.dot {
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 20rpx;
+  margin-right: 26rpx;
+  background-color: #1E1C17;
+
+}
+
+/*选中以后的小圆点样式  */
+.active {
+  background-color: #CAA86A;
+}
+
+.audio-area {
+  height: 70rpx;
+  background: #343432;
+}
+
+.mute {
+  width: 50rpx;
+  height: 50rpx;
+  vertical-align: middle;
+  margin-left: 40rpx
+}
+
+.audio-area:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 0;
+}
+
+.progress-total {
+  width: 570rpx;
+  height: 10rpx;
+  background-color: #201E1B;
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+  margin-left: 30rpx;
+  border-radius: 10rpx;
+}
+
+.progress-active {
+  /* width: 300rpx; */
+  height: 10rpx;
+  background-color: #CAA86A;
+  vertical-align: middle;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10rpx;
+}
+
+.progress-circle {
+  position: absolute;
+  top: -15rpx;
+  width: 40rpx;
+  height: 40rpx;
+  background-size: 100% 100%;
+}
+
+.scroll-area {
+  z-index: 1;
+  padding-top: 645rpx;
+}
+
+.paragraph {
+  padding: 40rpx 25rpx 0 25rpx
+}
+
+.arrow {
+  width: 50rpx;
+  height: 30rpx;
+  float: left;
+}
+
+.p-title {
+  width: 140rpx;
+  height: 35rpx;
+  margin-left: 15rpx;
+  float: left;
+}
+
+.content {
+  padding: 0 44rpx;
+}
+
+
+.padding-top-36 {
+  padding-top: 36rpx
+}
+.padding-top-40 {
+  padding-top: 40rpx
+}
+.padding-top-20 {
+  padding-top: 20rpx
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.roam {
+  width: 270rpx;
+  height: 100rpx;
+  margin-top: 350rpx;
+}
+
+.open-left {
+  border-left: 1rpx solid #B18720;
+  position: absolute;
+  top: 20rpx;
+  left: 0;
+}
+
+.open-left image {
+  width: 23rpx;
+  height: 25rpx;
+  position: absolute;
+  left: -11rpx;
+}
+
+.open-left image:nth-of-type(1) {
+  top: -10rpx;
+}
+
+.open-right {
+  position: relative;
+  padding-left: 35rpx;
+  letter-spacing: 3rpx;
+}
+
+.open-right .open-content {
+  margin-top: 20rpx;
+}
+
+.open-right .open-content:nth-of-type(1) {
+  margin-top: -20rpx;
+}
+
+.FFFFFF {
+  color: #FFFFFF
+}
+
+.bitmap {
+  width: 99.85%;
+  height: 110rpx;
+}
+
+.bitmpa_img {
+  width: 100%;
+  height: 100%
+}

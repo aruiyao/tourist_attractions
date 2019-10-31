@@ -1,0 +1,240 @@
+.bg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+page {
+  width: 100%;
+  height: 100%;
+}
+.title_box{
+  width: 100%;
+  height: 87rpx;
+  text-align: center;
+}
+.logo2 {
+  position: absolute;
+  width: 300rpx;
+  height: 350rpx;
+  top: 0;
+  left: 0;
+}
+
+.big_box {
+  position: relative;
+  top: 0;
+  padding: 50rpx 20rpx 20rpx 20rpx;
+  text-align: center;
+  margin: 0rpx 0rpx 20rpx 100rpx;
+  width: 70%;
+}
+
+.title {
+  height: 100%;
+}
+
+.map {
+  width: 100%;
+  height: 867rpx;
+  margin-top: 16rpx;
+}
+
+.bighash {
+  position: absolute;
+  width: 80rpx;
+  height: 80rpx;
+  z-index: 9999;
+  transform: none;
+  transition: all 0.2s ease-in 0s;
+}
+
+.hash1 {
+  position: absolute;
+  width: 35rpx;
+  height: 40rpx;
+  top: 19%;
+  left: 11%;
+}
+
+.hash2 {
+  position: absolute;
+  width: 35rpx;
+  height: 40rpx;
+  top: 28.5%;
+  left: 43%;
+}
+
+.hash3 {
+  position: absolute;
+  width: 35rpx;
+  height: 40rpx;
+  top: 28.5%;
+  left: 68.5%;
+}
+
+.hash4 {
+  position: absolute;
+  width: 35rpx;
+  height: 40rpx;
+  top: 46.5%;
+  left: 38%;
+}
+
+.hash5 {
+  position: absolute;
+  width: 35rpx;
+  height: 40rpx;
+  top: 44.5%;
+  left: 77%;
+}
+
+.hash6 {
+  position: absolute;
+  width: 35rpx;
+  height: 40rpx;
+  top: 54%;
+  left: 76%;
+}
+
+.hash7 {
+  position: absolute;
+  width: 35rpx;
+  height: 40rpx;
+  top: 58%;
+  left: 71%;
+}
+
+.hash8 {
+  position: absolute;
+  width: 35rpx;
+  height: 40rpx;
+  top: 62.5%;
+  left: 79%;
+}
+
+.hash9 {
+  position: absolute;
+  width: 35rpx;
+  height: 40rpx;
+  top: 73.5%;
+  left: 43.25%;
+}
+
+.hash10 {
+  position: absolute;
+  width: 35rpx;
+  height: 40rpx;
+  top: 81%;
+  left: 28%;
+}
+
+.hash11 {
+  position: absolute;
+  width: 35rpx;
+  height: 40rpx;
+  top: 82.25%;
+  left: 41%;
+}
+
+.content_box {
+  width: 99%;
+  text-align: center;
+  margin: 50rpx 0rpx 20rpx 0rpx;
+}
+
+.content_boxs {
+  width: 99%;
+  text-align: center;
+  top: 1406rpx;
+}
+
+.content {
+  width: 36%;
+  height: 79rpx;
+}
+
+.swiper{
+  height: 100%;
+}
+
+.swiper-box .wx-swiper-dots.wx-swiper-dots-horizontal {
+  margin-bottom: 2rpx;
+}
+
+.swiper-box .wx-swiper-dot {
+  width: 40rpx;
+  display: inline-flex;
+  height: 10rpx;
+  margin-left: 20rpx;
+  justify-content: space-between;
+}
+
+.swiper-box .wx-swiper-dot::before {
+  content: '';
+  flex-grow: 1;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8rpx
+}
+
+.swiper-box .wx-swiper-dot-active::before {
+  background: rgba(244, 0, 0, 0.8);
+}
+
+.swiper swiper-item:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 0;
+}
+
+.banner {
+  /* position: absolute;
+  top: 1200rpx; */
+  width: 99.5%;
+  height: 140rpx;
+
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+}
+
+image.active {
+  transform: none;
+  transition: all 0.2s ease-in 0s;
+  width: 115rpx;
+  height: 115rpx;
+  vertical-align: middle;
+}
+
+image.quiet {
+  transform: none;
+  transition: all 0.2s ease-in 0s;
+  width: 80rpx;
+  height: 80rpx;
+  vertical-align: middle;
+}
+
+.icon {
+  width: 40rpx;
+  height: 80rpx
+}
+
+.bigbg {
+  width: 100%;
+  position: relative;
+}
+
+.music {
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  top: 82rpx;
+  right: 34rpx;
+}
+audio{
+  display: none
+}

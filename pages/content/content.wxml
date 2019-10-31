@@ -1,0 +1,129 @@
+<view style="background-image: url('https://www.uumon.com/rgtImg/detail/背景 copy@2x.png'); background-size: 100% 100%;">
+  <view class="fixed-area">
+    <image class="music" src='https://www.uumon.com/rgtImg/icon/img/music.png' bindtap="audioPlay" wx:if="{{isPlay}}"></image>
+    <image class="music" src='https://www.uumon.com/rgtImg/icon/img/stop.png' bindtap="audioPlay" wx:if="{{!isPlay}}"></image>
+    <!-- 导航栏 -->
+    <view class="rectangle">
+      <swiper display-multiple-items='4.5' class='swiper-detail'>
+        <swiper-item bindtap='clickBtn1' data-hash="m1">
+          <image src='https://www.uumon.com/rgtImg/icon/1.png' wx:if="{{!but_1}}"></image>
+          <image src='https://www.uumon.com/rgtImg/icon/选中按钮1@2x.png' wx:if="{{but_1}}"></image>
+        </swiper-item>
+        <swiper-item bindtap='clickBtn2' data-hash="m2">
+          <image src='https://www.uumon.com/rgtImg/icon/2.png' wx:if="{{!but_2}}"></image>
+          <image src='https://www.uumon.com/rgtImg/icon/选中按钮2@2x.png' wx:if="{{but_2}}"></image>
+        </swiper-item>
+        <swiper-item bindtap='clickBtn3' data-hash="m3">
+          <image src='https://www.uumon.com/rgtImg/icon/3.png' wx:if="{{!but_3}}"></image>
+          <image src='https://www.uumon.com/rgtImg/icon/选中按钮3@2x.png' wx:if="{{but_3}}"></image>
+        </swiper-item>
+        <swiper-item bindtap='clickBtn4' data-hash="m4">
+          <image src='https://www.uumon.com/rgtImg/icon/4.png' wx:if="{{!but_4}}"></image>
+          <image src='https://www.uumon.com/rgtImg/icon/选中按钮4@2x.png' wx:if="{{but_4}}"></image>
+        </swiper-item>
+        <swiper-item bindtap='clickBtn5' data-hash="m5">
+          <image src='https://www.uumon.com/rgtImg/icon/5.png' wx:if="{{!but_5}}"></image>
+          <image src='https://www.uumon.com/rgtImg/icon/选中按钮5@2x.png' wx:if="{{but_5}}"></image>
+        </swiper-item>
+      </swiper>
+    </view>
+    <!-- Banner -->
+    <view class="banner">
+      <swiper class='swipers' interval="{{banner_interval}}" duration="{{banner_duration}}" current="{{currentSwiper}}" bindchange="swiperChange" autoplay="{{true}}">
+        <block wx:for="{{imgs}}" wx:key="url">
+          <swiper-item>
+            <image src="{{item.url}}" />
+          </swiper-item>
+        </block>
+      </swiper>
+      <!-- banner小圆点 -->
+      <view class="dots">
+        <block wx:for="{{imgs}}" wx:key="url">
+          <view class="dot{{index == currentSwiper ? ' active' : ''}}"></view>
+        </block>
+      </view>
+      <image src="https://www.uumon.com/rgtImg/detail/敬请期待@2x.png" class="wait" wx:if='{{!isHave3D}}' />
+      <image src="https://www.uumon.com/rgtImg/detail/进入三维模拟@2x.png" class="into3D" wx:if='{{isHave3D}}' />
+    </view>
+    <!-- 语音 -->
+    <view class="audio-area">
+      <image src="https://www.uumon.com/rgtImg/detail/语音@2x.png" class="mute" bindtap='changeVoice' wx:if="{{!isMute}}" />
+      <image src="https://www.uumon.com/rgtImg/icon/语音1@2x.png" class="mute" bindtap='changeVoice' wx:if="{{isMute}}" />
+      <view class="progress-total">
+        <view class="progress-active" style="width:{{circleLeft}}rpx"></view>
+        <view class="progress-circle" style="background-image: url('https://www.uumon.com/rgtImg/detail/定位点 copy 11@2x.png');left:{{circleLeft-20}}rpx" bindtouchmove="dragMove" bindtouchstart="dragStart"></view>
+      </view>
+    </view>
+  </view>
+  <scroll-view scroll-y="true" scroll-into-view="{{toView}}" style="height:{{winHeight}}" class="scroll-area">
+    <view style="background-image: url('https://www.uumon.com/rgtImg/detail/背景 copy@2x.png'); background-size: 100% 100%;padding-bottom:50rpx">
+      <!-- 详情介绍 -->
+      <view class="paragraph clearfix" id="m1">
+        <image src="https://www.uumon.com/rgtImg/detail/选中 copy@2x.png" class="arrow" />
+        <image src="https://www.uumon.com/rgtImg/detail/详情介绍@2x.png" class="p-title" />
+      </view>
+      <view class="content padding-top-20">
+        <text decode="{{true}}">{{detail}}</text>
+      </view>
+      <!-- 全景漫游 -->
+      <view class="paragraph clearfix" id="m2">
+        <image src="https://www.uumon.com/rgtImg/detail/选中 copy@2x.png" class="arrow" />
+        <image src="https://www.uumon.com/rgtImg/detail/全景漫游@2x.png" class="p-title" />
+      </view>
+      <view class="content padding-top-36">
+        <view style="background-image: url({{panorama}}); background-size: 100% 100%;text-align:center;height:500rpx">
+          <image src="https://www.uumon.com/rgtImg/detail/进去漫游@2x.png" class="roam" />
+        </view>
+      </view>
+      <!-- 开放细节 -->
+      <view class="paragraph clearfix" id="m3">
+        <image src="https://www.uumon.com/rgtImg/detail/选中 copy@2x.png" class="arrow" />
+        <image src="https://www.uumon.com/rgtImg/detail/开放细节@2x.png" class="p-title" />
+      </view>
+      <view class="content padding-top-20 clearfix">
+        <view class="open-right">
+          <view class="open-left" style="height:{{solid_height}}">
+            <image src="https://www.uumon.com/rgtImg/detail/定位点 copy 12@2x.png" />
+            <image src="https://www.uumon.com/rgtImg/detail/定位点 copy 12@2x.png" style="top:{{second_top}}" />
+            <image src="https://www.uumon.com/rgtImg/detail/定位点 copy 12@2x.png" style="top:{{third_top}}" />
+          </view>
+          <view class="">
+            <view class="FFFFFF" id="open-time">开放时间</view>
+             <text decode="{{true}}">{{open_time}}</text>
+          </view>
+          <view class="open-content">
+            <view class="FFFFFF" id="ticket">票务政策</view>
+            <text decode="{{true}}">{{ticket_policy}}</text>
+          </view>
+          <view class="open-content">
+            <view class="FFFFFF" id="phone">联系电话</view>
+            <text decode="{{true}}">{{phone}}</text>
+          </view>
+        </view>
+      </view>
+      <!-- 地址路线 -->
+      <view class="paragraph clearfix" id="m4">
+        <image src="https://www.uumon.com/rgtImg/detail/选中 copy@2x.png" class="arrow" />
+        <image src="https://www.uumon.com/rgtImg/detail/地址路线@2x.png" class="p-title" />
+      </view>
+      <view class="content padding-top-20 FFFFFF">{{address}}</view>
+      <!-- 地址路线 -->
+      <view class="paragraph clearfix" id="m5">
+        <image src="https://www.uumon.com/rgtImg/detail/选中 copy@2x.png" class="arrow" />
+        <image src="https://www.uumon.com/rgtImg/detail/浏览须知@2x.png" class="p-title" />
+      </view>
+      <view class="content padding-top-20">
+        <view>1.景区内请勿吸烟。</view>
+        <view>2.景区内禁止游泳、钓鱼。</view>
+        <view>3.请勿将各类管制刀具、打火机、危险品及宠物带入景区。</view>
+        <view>4.参观车辆请在停车场指定位置有序排放。</view>
+        <view>5.团队参观请提前预约。</view>
+        <view>6.酗酒者、衣容不整者、无行为能力或限制行为能力且无监护人陪伴者谢绝进去景区。</view>
+        <view>7.其他有碍游客安全影响游客游览者谢绝进入景区。</view>
+      </view>
+    </view>
+    <view class="bitmap">
+      <image class="bitmpa_img" src="https://www.uumon.com/rgtImg/detail/Bitmap@2x(1).png"></image>
+    </view>
+  </scroll-view>
+</view>

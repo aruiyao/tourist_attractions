@@ -1,0 +1,42 @@
+<view class="bigbg" style="background-image: url('https://www.uumon.com/rgtImg/icon/img/bg.png'); background-size: 100% 100%">
+  <!-- <image class='bg' src='../img/bg.png' style='background-size: 100% 100%'></image> -->
+  <image class="logo2" src="https://www.uumon.com/rgtImg/icon/img/logo2.png"></image>
+  <image class="music" src="https://www.uumon.com/rgtImg/icon/img/logo2.png"></image>
+  <view class="big_box">
+    <view class="title_box">
+      <image class="title" src="{{titleImgSrc}}"></image>
+    </view>
+    <image class="map" src="https://www.uumon.com/rgtImg/icon/img/map.png"></image>
+    <image class="bighash" src="https://www.uumon.com/rgtImg/icon/img/bighash.png" style="bottom:{{bighash_bottom}};left:{{bighash_left}}"></image>
+    <image class="hash1" src="https://www.uumon.com/rgtImg/icon/img/hash.png"></image>
+    <image class="hash2" src="https://www.uumon.com/rgtImg/icon/img/hash.png"></image>
+    <image class="hash3" src="https://www.uumon.com/rgtImg/icon/img/hash.png"></image>
+    <image class="hash4" src="https://www.uumon.com/rgtImg/icon/img/hash.png"></image>
+    <image class="hash5" src="https://www.uumon.com/rgtImg/icon/img/hash.png"></image>
+    <image class="hash6" src="https://www.uumon.com/rgtImg/icon/img/hash.png"></image>
+    <image class="hash7" src="https://www.uumon.com/rgtImg/icon/img/hash.png"></image>
+    <image class="hash8" src="https://www.uumon.com/rgtImg/icon/img/hash.png"></image>
+    <image class="hash9" src="https://www.uumon.com/rgtImg/icon/img/hash.png"></image>
+    <image class="hash10" src="https://www.uumon.com/rgtImg/icon/img/hash.png"></image>
+    <image class="hash11" src="https://www.uumon.com/rgtImg/icon/img/hash.png"></image>
+  </view>
+  <view class="content_box">
+    <image class="content" src="https://www.uumon.com/rgtImg/icon/img/content.png" bindtap='tocontent'></image>
+  </view>
+  <view class='banner'>
+    <swiper class="swiper" current="{{current}}" display-multiple-items='5' bindtransition='moveSwiper' previous-margin="70rpx" next-margin="70rpx" bindchange="changeSwiper" circular="{{true}}">
+      <block wx:for="{{movies}}" wx:for-index="index">
+        <swiper-item style='text-align: center;' bindtap="tapSwiper" data-index="{{index}}">
+          <image src="{{index === activeImgIndex?item.activeUrl:item.quietUrl}}" class="{{index === activeImgIndex ? 'active' : 'quiet'}}" mode="aspectFill" />
+          <view >{{index}}</view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="content_boxs">
+    <image class="icon" src="https://www.uumon.com/rgtImg/icon/img/hash.png"></image>
+  </view>
+  <audio src='https://www.uumon.com/rgtImg/bgm/bgm.mp3' loop='true' action="{{audioAction}}" id="myAudio" autoplay='true'></audio>
+  <image class="music" src='https://www.uumon.com/rgtImg/icon/img/music.png' bindtap="audioPlay" wx:if="{{isMute}}"></image>
+  <image class="music" src='https://www.uumon.com/rgtImg/icon/img/stop.png' bindtap="audioPlay" wx:if="{{!isMute}}"></image>
+</view>
