@@ -8,17 +8,18 @@
     </view>
     <image class="map" src="https://www.uumon.com/rgtImg/icon/img/map.png"></image>
     <image class="bighash" src="https://www.uumon.com/rgtImg/icon/img/bighash.png" style="bottom:{{bighash_bottom}};left:{{bighash_left}}"></image>
-    <image class="hash1" src="https://www.uumon.com/rgtImg/icon/img/hash.png"></image>
-    <image class="hash2" src="https://www.uumon.com/rgtImg/icon/img/hash.png"></image>
-    <image class="hash3" src="https://www.uumon.com/rgtImg/icon/img/hash.png"></image>
-    <image class="hash4" src="https://www.uumon.com/rgtImg/icon/img/hash.png"></image>
-    <image class="hash5" src="https://www.uumon.com/rgtImg/icon/img/hash.png"></image>
-    <image class="hash6" src="https://www.uumon.com/rgtImg/icon/img/hash.png"></image>
-    <image class="hash7" src="https://www.uumon.com/rgtImg/icon/img/hash.png"></image>
-    <image class="hash8" src="https://www.uumon.com/rgtImg/icon/img/hash.png"></image>
-    <image class="hash9" src="https://www.uumon.com/rgtImg/icon/img/hash.png"></image>
-    <image class="hash10" src="https://www.uumon.com/rgtImg/icon/img/hash.png"></image>
-    <image class="hash11" src="https://www.uumon.com/rgtImg/icon/img/hash.png"></image>
+    <image class="hash1" src="https://www.uumon.com/rgtImg/icon/img/hash.png" wx:if="{{but_1}}"></image>
+    <image class="hash2" src="https://www.uumon.com/rgtImg/icon/img/hash.png" wx:if="{{but_2}}"></image>
+    <image class="hash3" src="https://www.uumon.com/rgtImg/icon/img/hash.png" wx:if="{{but_3}}"></image>
+    <image class="hash4" src="https://www.uumon.com/rgtImg/icon/img/hash.png" wx:if="{{but_4}}"></image>
+    <image class="hash5" src="https://www.uumon.com/rgtImg/icon/img/hash.png" wx:if="{{but_5}}"></image>
+    <image class="hash6" src="https://www.uumon.com/rgtImg/icon/img/hash.png" wx:if="{{but_6}}"></image>
+    <image class="hash7" src="https://www.uumon.com/rgtImg/icon/img/hash.png" wx:if="{{but_7}}"></image>
+    <image class="hash8" src="https://www.uumon.com/rgtImg/icon/img/hash.png" wx:if="{{but_8}}"></image>
+    <image class="hash9" src="https://www.uumon.com/rgtImg/icon/img/hash.png" wx:if="{{but_9}}"></image>
+    <image class="hash10" src="https://www.uumon.com/rgtImg/icon/img/hash.png" wx:if="{{but_10}}"></image>
+    <image class="hash11" src="https://www.uumon.com/rgtImg/icon/img/hash.png" wx:if="{{but_11}}"></image>
+    <image class="hash12" src="https://www.uumon.com/rgtImg/icon/img/hash.png" wx:if="{{but_12}}"></image>
   </view>
   <view class="content_box">
     <image class="content" src="https://www.uumon.com/rgtImg/icon/img/content.png" bindtap='tocontent'></image>

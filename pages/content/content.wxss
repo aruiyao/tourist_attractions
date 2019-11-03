@@ -20,6 +20,8 @@ page {
   top: 82rpx;
   right: 34rpx;
   z-index: 2;
+  opacity: 0;
+
 }
 
 .rectangle {
@@ -231,6 +233,9 @@ page {
 
 .FFFFFF {
   color: #FFFFFF
+}
+.guide view{
+  line-height: 50rpx;
 }
 
 .bitmap {

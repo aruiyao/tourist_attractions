@@ -32,6 +32,7 @@ page {
 
 .title {
   height: 100%;
+  width: 100%;
 }
 
 .map {
@@ -136,7 +137,13 @@ page {
   top: 82.25%;
   left: 41%;
 }
-
+.hash12 {
+  position: absolute;
+  width: 35rpx;
+  height: 40rpx;
+  top: 86%;
+  left: 29%;
+}
 .content_box {
   width: 99%;
   text-align: center;

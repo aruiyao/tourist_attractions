@@ -63,7 +63,7 @@
         <image src="https://www.uumon.com/rgtImg/detail/详情介绍@2x.png" class="p-title" />
       </view>
       <view class="content padding-top-20">
-        <text decode="{{true}}">{{detail}}</text>
+        <text decode="{{true}}" style="line-height:50rpx">{{detail}}</text>
       </view>
       <!-- 全景漫游 -->
       <view class="paragraph clearfix" id="m2">
@@ -107,12 +107,12 @@
         <image src="https://www.uumon.com/rgtImg/detail/地址路线@2x.png" class="p-title" />
       </view>
       <view class="content padding-top-20 FFFFFF">{{address}}</view>
-      <!-- 地址路线 -->
+      <!-- 游览须知 -->
       <view class="paragraph clearfix" id="m5">
         <image src="https://www.uumon.com/rgtImg/detail/选中 copy@2x.png" class="arrow" />
         <image src="https://www.uumon.com/rgtImg/detail/浏览须知@2x.png" class="p-title" />
       </view>
-      <view class="content padding-top-20">
+      <view class="content padding-top-20 guide">
         <view>1.景区内请勿吸烟。</view>
         <view>2.景区内禁止游泳、钓鱼。</view>
         <view>3.请勿将各类管制刀具、打火机、危险品及宠物带入景区。</view>
