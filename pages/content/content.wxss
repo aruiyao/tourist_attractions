@@ -20,8 +20,6 @@ page {
   top: 82rpx;
   right: 34rpx;
   z-index: 2;
-  opacity: 0;
-
 }
 
 .rectangle {
@@ -152,7 +150,7 @@ page {
 
 .scroll-area {
   z-index: 1;
-  padding-top: 645rpx;
+  padding-top: 650rpx;
 }
 
 .paragraph {

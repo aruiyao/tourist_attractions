@@ -1,4 +1,4 @@
-<view style="background-image: url('https://www.uumon.com/rgtImg/detail/背景 copy@2x.png'); background-size: 100% 100%;">
+<view style="background-image: url('https://www.uumon.com/rgtImg/detail/背景 copy@2x.png');background-size:100% 50%;position:fixed">
   <view class="fixed-area">
     <image class="music" src='https://www.uumon.com/rgtImg/icon/img/music.png' bindtap="audioPlay" wx:if="{{isPlay}}"></image>
     <image class="music" src='https://www.uumon.com/rgtImg/icon/img/stop.png' bindtap="audioPlay" wx:if="{{!isPlay}}"></image>
@@ -51,12 +51,12 @@
       <image src="https://www.uumon.com/rgtImg/icon/语音1@2x.png" class="mute" bindtap='changeVoice' wx:if="{{isMute}}" />
       <view class="progress-total">
         <view class="progress-active" style="width:{{circleLeft}}rpx"></view>
-        <view class="progress-circle" style="background-image: url('https://www.uumon.com/rgtImg/detail/定位点 copy 11@2x.png');left:{{circleLeft-20}}rpx" bindtouchmove="dragMove" bindtouchstart="dragStart"></view>
+        <view class="progress-circle" style="background-image: url('https://www.uumon.com/rgtImg/detail/定位点 copy 11@2x.png');left:{{circleLeft-20}}rpx" bindtouchmove="dragMove" bindtouchstart="dragStart" bindtouchend="dragEnd"></view>
       </view>
     </view>
   </view>
-  <scroll-view scroll-y="true" scroll-into-view="{{toView}}" style="height:{{winHeight}}" class="scroll-area">
-    <view style="background-image: url('https://www.uumon.com/rgtImg/detail/背景 copy@2x.png'); background-size: 100% 100%;padding-bottom:50rpx">
+  <scroll-view scroll-y="true" scroll-into-view="{{toView}}" style="height:{{winHeight}}" class="scroll-area" scroll-with-animation="{{true}}" bindscroll="scrollContent">
+    <view style="padding-bottom:50rpx">
       <!-- 详情介绍 -->
       <view class="paragraph clearfix" id="m1">
         <image src="https://www.uumon.com/rgtImg/detail/选中 copy@2x.png" class="arrow" />
@@ -89,7 +89,7 @@
           </view>
           <view class="">
             <view class="FFFFFF" id="open-time">开放时间</view>
-             <text decode="{{true}}">{{open_time}}</text>
+            <text decode="{{true}}">{{open_time}}</text>
           </view>
           <view class="open-content">
             <view class="FFFFFF" id="ticket">票务政策</view>
@@ -107,6 +107,9 @@
         <image src="https://www.uumon.com/rgtImg/detail/地址路线@2x.png" class="p-title" />
       </view>
       <view class="content padding-top-20 FFFFFF">{{address}}</view>
+      <view class="content padding-top-20">
+        <text decode="{{true}}" style="line-height:50rpx">{{traffic}}</text>
+      </view>
       <!-- 游览须知 -->
       <view class="paragraph clearfix" id="m5">
         <image src="https://www.uumon.com/rgtImg/detail/选中 copy@2x.png" class="arrow" />
