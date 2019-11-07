@@ -1,6 +1,6 @@
 <view style="background-image: url('https://www.uumon.com/rgtImg/detail/背景 copy@2x.png');background-size:100% 50%;position:fixed">
   <view class="fixed-area">
-    <image class="music" src='https://www.uumon.com/rgtImg/icon/img/music.png' bindtap="audioPlay" wx:if="{{isPlay}}"></image>
+    <!--<image class="music" src='https://www.uumon.com/rgtImg/icon/img/music.png' bindtap="audioPlay" wx:if="{{isPlay}}"></image>-->
     <image class="music" src='https://www.uumon.com/rgtImg/icon/img/stop.png' bindtap="audioPlay" wx:if="{{!isPlay}}"></image>
     <!-- 导航栏 -->
     <view class="rectangle">

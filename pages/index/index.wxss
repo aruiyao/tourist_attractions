@@ -28,6 +28,7 @@ page {
   text-align: center;
   margin: 0rpx 0rpx 20rpx 100rpx;
   width: 70%;
+  height: 68%;
 }
 
 .title {
@@ -37,7 +38,7 @@ page {
 
 .map {
   width: 100%;
-  height: 867rpx;
+  height: 726rpx;
   margin-top: 16rpx;
 }
 
@@ -147,7 +148,7 @@ page {
 .content_box {
   width: 99%;
   text-align: center;
-  margin: 50rpx 0rpx 20rpx 0rpx;
+  margin: 24rpx 0rpx 20rpx 0rpx;
 }
 
 .content_boxs {
@@ -200,7 +201,7 @@ page {
   /* position: absolute;
   top: 1200rpx; */
   width: 99.5%;
-  height: 140rpx;
+  height: 118rpx;
 
 }
 
@@ -222,16 +223,20 @@ image.quiet {
   transition: all 0.2s ease-in 0s;
   width: 80rpx;
   height: 80rpx;
+  opacity: 0.7;
   vertical-align: middle;
 }
 
 .icon {
   width: 40rpx;
-  height: 80rpx
+  height:61rpx
 }
-
+.map_box{
+  height: 90%;
+}
 .bigbg {
   width: 100%;
+  height: 100%;
   position: relative;
 }
 
@@ -239,7 +244,7 @@ image.quiet {
   width: 50rpx;
   height: 50rpx;
   position: absolute;
-  top: 82rpx;
+  top: 64rpx;
   right: 34rpx;
 }
 audio{

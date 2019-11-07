@@ -6,20 +6,23 @@
     <view class="title_box">
       <image class="title" src="{{titleImgSrc}}"></image>
     </view>
-    <image class="map" src="https://www.uumon.com/rgtImg/icon/img/map.png"></image>
-    <image class="bighash" src="https://www.uumon.com/rgtImg/icon/img/bighash.png" style="bottom:{{bighash_bottom}};left:{{bighash_left}}"></image>
-    <image class="hash1" src="https://www.uumon.com/rgtImg/icon/img/hash.png" wx:if="{{but_1}}"></image>
-    <image class="hash2" src="https://www.uumon.com/rgtImg/icon/img/hash.png" wx:if="{{but_2}}"></image>
-    <image class="hash3" src="https://www.uumon.com/rgtImg/icon/img/hash.png" wx:if="{{but_3}}"></image>
-    <image class="hash4" src="https://www.uumon.com/rgtImg/icon/img/hash.png" wx:if="{{but_4}}"></image>
-    <image class="hash5" src="https://www.uumon.com/rgtImg/icon/img/hash.png" wx:if="{{but_5}}"></image>
-    <image class="hash6" src="https://www.uumon.com/rgtImg/icon/img/hash.png" wx:if="{{but_6}}"></image>
-    <image class="hash7" src="https://www.uumon.com/rgtImg/icon/img/hash.png" wx:if="{{but_7}}"></image>
-    <image class="hash8" src="https://www.uumon.com/rgtImg/icon/img/hash.png" wx:if="{{but_8}}"></image>
-    <image class="hash9" src="https://www.uumon.com/rgtImg/icon/img/hash.png" wx:if="{{but_9}}"></image>
-    <image class="hash10" src="https://www.uumon.com/rgtImg/icon/img/hash.png" wx:if="{{but_10}}"></image>
-    <image class="hash11" src="https://www.uumon.com/rgtImg/icon/img/hash.png" wx:if="{{but_11}}"></image>
-    <image class="hash12" src="https://www.uumon.com/rgtImg/icon/img/hash.png" wx:if="{{but_12}}"></image>
+    <view class="map_box" style="background-image: url('https://www.uumon.com/rgtImg/icon/img/map.png'); background-size: 100% 100%">
+      <!--<image class="map" src="https://www.uumon.com/rgtImg/icon/img/map.png"></image>-->
+    
+      <image class="bighash" src="../img/bighash.gif" style="bottom:{{bighash_bottom}};left:{{bighash_left}}"></image>
+       <image class="hash9" src="https://www.uumon.com/rgtImg/icon/img/hash.png" wx:if="{{activeImgIndex!=0}}"></image>      
+       <image class="hash12" src="https://www.uumon.com/rgtImg/icon/img/hash.png" wx:if="{{activeImgIndex!=1}}"></image>      
+       <image class="hash3" src="https://www.uumon.com/rgtImg/icon/img/hash.png" wx:if="{{activeImgIndex!=2}}"></image>      
+       <image class="hash1" src="https://www.uumon.com/rgtImg/icon/img/hash.png" wx:if="{{activeImgIndex!=3}}"></image>      
+       <image class="hash7" src="https://www.uumon.com/rgtImg/icon/img/hash.png" wx:if="{{activeImgIndex!=4}}"></image>      
+       <image class="hash8" src="https://www.uumon.com/rgtImg/icon/img/hash.png" wx:if="{{activeImgIndex!=5}}"></image>      
+       <image class="hash4" src="https://www.uumon.com/rgtImg/icon/img/hash.png" wx:if="{{activeImgIndex!=6}}"></image>      
+       <image class="hash10" src="https://www.uumon.com/rgtImg/icon/img/hash.png" wx:if="{{activeImgIndex!=7}}"></image>      
+       <image class="hash11" src="https://www.uumon.com/rgtImg/icon/img/hash.png" wx:if="{{activeImgIndex!=8}}"></image>      
+       <image class="hash5" src="https://www.uumon.com/rgtImg/icon/img/hash.png" wx:if="{{activeImgIndex!=9}}"></image>      
+       <image class="hash6" src="https://www.uumon.com/rgtImg/icon/img/hash.png" wx:if="{{activeImgIndex!=10}}"></image>      
+       <image class="hash2" src="https://www.uumon.com/rgtImg/icon/img/hash.png" wx:if="{{activeImgIndex!=11}}"></image>
+    </view>
   </view>
   <view class="content_box">
     <image class="content" src="https://www.uumon.com/rgtImg/icon/img/content.png" bindtap='tocontent'></image>
@@ -29,7 +32,7 @@
       <block wx:for="{{movies}}" wx:for-index="index">
         <swiper-item style='text-align: center;' bindtap="tapSwiper" data-index="{{index}}">
           <image src="{{index === activeImgIndex?item.activeUrl:item.quietUrl}}" class="{{index === activeImgIndex ? 'active' : 'quiet'}}" mode="aspectFill" />
-          <view >{{index}}</view>
+          <!--<view >{{index}}</view>-->
         </swiper-item>
       </block>
     </swiper>

@@ -4,94 +4,83 @@ const app = getApp()
 
 Page({
   data: {
-    but_1:true,
-    but_2: true,
-    but_3: true,
-    but_4: true,
-    but_5: true,
-    but_6: true,
-    but_7: true,
-    but_8: true,
-    but_9: true,
-    but_10: true,
-    but_11: true,
-    but_12: true,
     indicatorDots: false,
     isNewOpen: true,
     // interval: 2000,
     // duration: 1000,
     current: 0,
     activeImgIndex: 2,
-    titleImgSrc:"../img/3.png",
-    bgm: '../img/music.png',
+    titleImgSrc:"https://www.uumon.com/rgtImg/img/3.png",
+    bgm: 'https://www.uumon.com/rgtImg/icon/img/music.png',
     movies: [
       {
-        activeUrl: '../img/1－2.png',
-        quietUrl: '../img/1－1.png',
-        titleImgUrl: '../img/1.png'
+        activeUrl: 'https://www.uumon.com/rgtImg/img/1-2.png',
+        quietUrl: 'https://www.uumon.com/rgtImg/img/1-1.png',
+        titleImgUrl: 'https://www.uumon.com/rgtImg/img/1.png'
       },
       {
-        activeUrl: '../img/2－2.png',
-        quietUrl: '../img/2－1.png',
-        titleImgUrl: '../img/2.png'
+        activeUrl: 'https://www.uumon.com/rgtImg/img/2-2.png',
+        quietUrl: 'https://www.uumon.com/rgtImg/img/2-1.png',
+        titleImgUrl: 'https://www.uumon.com/rgtImg/img/2.png'
       },
       {
-        activeUrl: '../img/3－2.png',
-        quietUrl: '../img/3－1.png',
-        titleImgUrl: '../img/3.png'
+        activeUrl: 'https://www.uumon.com/rgtImg/img/3-2.png',
+        quietUrl: 'https://www.uumon.com/rgtImg/img/3-1.png',
+        titleImgUrl: 'https://www.uumon.com/rgtImg/img/3.png'
       },
       {
-        activeUrl: '../img/4－2.png',
-        quietUrl: '../img/4－1.png',
-        titleImgUrl: '../img/4.png'
+        activeUrl: 'https://www.uumon.com/rgtImg/img/4-2.png',
+        quietUrl: 'https://www.uumon.com/rgtImg/img/4-1.png',
+        titleImgUrl: 'https://www.uumon.com/rgtImg/img/4.png'
       },
       {
-        activeUrl: '../img/5－2.png',
-        quietUrl: '../img/5－1.png',
-        titleImgUrl: '../img/5.png'
+        activeUrl: 'https://www.uumon.com/rgtImg/img/5-2.png',
+        quietUrl: 'https://www.uumon.com/rgtImg/img/5-1.png',
+        titleImgUrl: 'https://www.uumon.com/rgtImg/img/5.png'
       },
       {
-        activeUrl: '../img/6－2.png',
-        quietUrl: '../img/6－1.png',
-        titleImgUrl: '../img/6.png'
+        activeUrl: 'https://www.uumon.com/rgtImg/img/6-2.png',
+        quietUrl: 'https://www.uumon.com/rgtImg/img/6-1.png',
+        titleImgUrl: 'https://www.uumon.com/rgtImg/img/6.png'
       },
       {
-        activeUrl: '../img/7－2.png',
-        quietUrl: '../img/7－1.png',
-        titleImgUrl: '../img/7.png'
+        activeUrl: 'https://www.uumon.com/rgtImg/img/7-2.png',
+        quietUrl: 'https://www.uumon.com/rgtImg/img/7-1.png',
+        titleImgUrl: 'https://www.uumon.com/rgtImg/img/7.png'
       },
       {
-        activeUrl: '../img/8－2.png',
-        quietUrl: '../img/8－1.png',
-        titleImgUrl: '../img/8.png'
+        activeUrl: 'https://www.uumon.com/rgtImg/img/8-2.png',
+        quietUrl: 'https://www.uumon.com/rgtImg/img/8-1.png',
+        titleImgUrl: 'https://www.uumon.com/rgtImg/img/8.png'
       },
       {
-        activeUrl: '../img/9－2.png',
-        quietUrl: '../img/9－1.png',
-        titleImgUrl: '../img/9.png'
+        activeUrl: 'https://www.uumon.com/rgtImg/img/9-2.png',
+        quietUrl: 'https://www.uumon.com/rgtImg/img/9-1.png',
+        titleImgUrl: 'https://www.uumon.com/rgtImg/img/9.png'
       },
       {
-        activeUrl: '../img/10－2.png',
-        quietUrl: '../img/10－1.png',
-        titleImgUrl: '../img/10.png'
+        activeUrl: 'https://www.uumon.com/rgtImg/img/10-2.png',
+        quietUrl: 'https://www.uumon.com/rgtImg/img/10-1.png',
+        titleImgUrl: 'https://www.uumon.com/rgtImg/img/10.png'
       },
       {
-        activeUrl: '../img/11－2.png',
-        quietUrl: '../img/11－1.png',
-        titleImgUrl: '../img/11.png'
+        activeUrl: 'https://www.uumon.com/rgtImg/img/11-2.png',
+        quietUrl: 'https://www.uumon.com/rgtImg/img/11-1.png',
+        titleImgUrl: 'https://www.uumon.com/rgtImg/img/11.png'
       },
       {
-        activeUrl: '../img/12－2.png',
-        quietUrl: '../img/12－1.png',
-        titleImgUrl: '../img/12.png'
+        activeUrl: 'https://www.uumon.com/rgtImg/img/12-2.png',
+        quietUrl: 'https://www.uumon.com/rgtImg/img/12-1.png',
+        titleImgUrl: 'https://www.uumon.com/rgtImg/img/12.png'
       }
     ],
     audioAction: {
       method: 'pause'
     },
     isClose: true,
-    bighash_bottom: '65%',
-    bighash_left: '65%',
+    bighash_bottom: '66%',
+    bighash_left: '64.5%',
+    but_3:false
   },
 
   audioPlay: function () {
@@ -116,7 +105,7 @@ Page({
   },
   tocontent: function () {
     this.setData({
-        isNewOpen: true,
+        isNewOpen: false,
         audioAction: {
           method: 'pause'
         }
@@ -139,6 +128,7 @@ Page({
       }
     });
   },
+  
   onShow: function () {
     if (!this.data.isNewOpen) {
       this.setData({
@@ -149,8 +139,9 @@ Page({
       })
     }
   },
+  
   changeSwiper(e) {
-    console.log(e.detail);
+    //console.log(e.detail);
     if (e.detail.source === 'touch') {
       var bottom_positon = 0;
       var left_positon = 0;
@@ -171,7 +162,7 @@ Page({
           break;
         case 9:
           aii = 11;
-          bottom_positon = "65%";
+          bottom_positon = "66%";
           left_positon = "39%";
           break;
         case 8:
@@ -191,8 +182,8 @@ Page({
           break;
         case 5:
           aii = 7;
-          bottom_positon = "12.7%";
-          left_positon = "23%";
+          bottom_positon = "13%";
+          left_positon = "23.5%";
           break;
         case 4:
           aii = 6;
@@ -201,8 +192,8 @@ Page({
           break;
         case 3:
           aii = 5;
-          bottom_positon = "65%";
-          left_positon = "65%";
+          bottom_positon = "32%";
+          left_positon = "74.7%";
           break;
         case 2:
           aii = 4;
@@ -228,7 +219,7 @@ Page({
         activeImgIndex: aii,
         bighash_bottom: bottom_positon,
         bighash_left: left_positon,
-        titleImgSrc: this.data.movies[aii].titleImgUrl
+        titleImgSrc: this.data.movies[aii].titleImgUrl,
       });
     }
 
@@ -254,14 +245,14 @@ Page({
         tit = index;
         bottom_positon = "8%";
         left_positon = "25%";
-        
         break;
       case 11:
         cur = len - 3
         aii = index;
         tit = index;
-        bottom_positon = "65%";
+        bottom_positon = "66%";
         left_positon = "39%";
+        console.log('123456789');
         break;
       case 10:
         cur = len - 4
@@ -288,8 +279,8 @@ Page({
         cur = len - 7
         aii = index;
         tit = index;
-        bottom_positon = "12.7%";
-        left_positon = "23%";
+        bottom_positon = "13%";
+        left_positon = "23.5%";
         break;
       case 6:
         cur = len - 8
@@ -302,8 +293,8 @@ Page({
         cur = len - 9
         aii = index;
         tit = index;
-        bottom_positon = "65%";
-        left_positon = "65%";
+        bottom_positon = "32%";
+        left_positon = "74.7%";
         break;
       case 4:
         cur = len - 10
@@ -341,7 +332,7 @@ Page({
     })
   },
   getUserInfo: function (e) {
-    console.log(e)
+    //console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,
@@ -349,7 +340,7 @@ Page({
     })
   },
   moveSwiper(e) {
-    console.log(e.detail);
+    //console.log(e.detail);
 
   }
 })
