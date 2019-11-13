@@ -1,6 +1,6 @@
 <view style="background-image: url('https://www.uumon.com/rgtImg/detail/背景 copy@2x.png');background-size:100% 50%;position:fixed">
   <view class="fixed-area">
-    <!--<image class="music" src='https://www.uumon.com/rgtImg/icon/img/music.png' bindtap="audioPlay" wx:if="{{isPlay}}"></image>-->
+    <image class="music" src='https://www.uumon.com/rgtImg/icon/img/music.png' bindtap="audioPlay" wx:if="{{isPlay}}"></image>
     <image class="music" src='https://www.uumon.com/rgtImg/icon/img/stop.png' bindtap="audioPlay" wx:if="{{!isPlay}}"></image>
     <!-- 导航栏 -->
     <view class="rectangle">
@@ -43,7 +43,7 @@
         </block>
       </view>
       <image src="https://www.uumon.com/rgtImg/detail/敬请期待@2x.png" class="wait" wx:if='{{!isHave3D}}' />
-      <image src="https://www.uumon.com/rgtImg/detail/进入三维模拟@2x.png" class="into3D" wx:if='{{isHave3D}}' />
+      <image src="{{microShowImg}}" class="into3D" wx:if='{{isHave3D}}' />
     </view>
     <!-- 语音 -->
     <view class="audio-area">
@@ -57,6 +57,9 @@
   </view>
   <scroll-view scroll-y="true" scroll-into-view="{{toView}}" style="height:{{winHeight}}" class="scroll-area" scroll-with-animation="{{true}}" bindscroll="scrollContent">
     <view style="padding-bottom:50rpx">
+      <view class="content padding-top-20">
+        <text decode="{{true}}" style="line-height:50rpx">{{detailtop}}</text>
+      </view>
       <!-- 详情介绍 -->
       <view class="paragraph clearfix" id="m1">
         <image src="https://www.uumon.com/rgtImg/detail/选中 copy@2x.png" class="arrow" />
@@ -123,6 +126,12 @@
         <view>5.团队参观请提前预约。</view>
         <view>6.酗酒者、衣容不整者、无行为能力或限制行为能力且无监护人陪伴者谢绝进去景区。</view>
         <view>7.其他有碍游客安全影响游客游览者谢绝进入景区。</view>
+      </view>
+      <view class="detail_img">
+        <image class="bitmpa_img" src="{{detail_img}}"></image>
+      </view>
+      <view class="wenbaosuo_img">
+        <image class="bitmpa_img" src="../img/detail/增加文保所元素.png"></image>
       </view>
     </view>
     <view class="bitmap">

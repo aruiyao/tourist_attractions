@@ -1,3 +1,7 @@
+
+<view class="bbg_box" style="background-image: url('https://www.uumon.com/rgtImg/icon/img/bg.png'); background-size: 100% 100%" bindtap='bindfollow' animation="{{animationData}}" hidden='{{hidden}}'>
+   <image class="bbg" src='../img/bbg2.png' ></image> 
+</view>
 <view class="bigbg" style="background-image: url('https://www.uumon.com/rgtImg/icon/img/bg.png'); background-size: 100% 100%">
   <!-- <image class='bg' src='../img/bg.png' style='background-size: 100% 100%'></image> -->
   <image class="logo2" src="https://www.uumon.com/rgtImg/icon/img/logo2.png"></image>

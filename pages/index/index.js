@@ -8,9 +8,11 @@ Page({
     isNewOpen: true,
     // interval: 2000,
     // duration: 1000,
+    animationData: {},
+    hidden: false,
     current: 0,
     activeImgIndex: 2,
-    titleImgSrc:"https://www.uumon.com/rgtImg/img/3.png",
+    titleImgSrc:"https://www.uumon.com/rgtImg/icon/img/3.png",
     bgm: 'https://www.uumon.com/rgtImg/icon/img/music.png',
     movies: [
       {
@@ -36,7 +38,7 @@ Page({
       {
         activeUrl: 'https://www.uumon.com/rgtImg/img/5-2.png',
         quietUrl: 'https://www.uumon.com/rgtImg/img/5-1.png',
-        titleImgUrl: 'https://www.uumon.com/rgtImg/img/5.png'
+        titleImgUrl: 'https://www.uumon.com/rgtImg/icon/img/5.png'
       },
       {
         activeUrl: 'https://www.uumon.com/rgtImg/img/6-2.png',
@@ -82,7 +84,28 @@ Page({
     bighash_left: '64.5%',
     but_3:false
   },
+  bindfollow: function (e) {
+    var animation = wx.createAnimation({
+      duration: 2000,
+      timingFunction: 'linear',
+    })
 
+    this.animation = animation
+
+    animation.opacity(0).step()
+
+    this.setData({
+      animationData: animation.export()
+    })
+
+    setTimeout(function () {
+      this.setData({
+        hidden: true
+      })
+    }.bind(this), 2000)
+
+  },
+  
   audioPlay: function () {
     var that = this;
     this.setData({
@@ -117,6 +140,10 @@ Page({
   },
 
   onLoad: function (options) {
+    setTimeout(function () {
+      this.bindfollow();
+    }.bind(this), 1000)
+    
     this.audioPlay();
     let that = this;
     wx.getSystemInfo({
@@ -152,17 +179,17 @@ Page({
       switch (e.detail.current) {
         case 11:
           aii = 1;
-          bottom_positon = "8%";
+          bottom_positon = "5%";
           left_positon = "25%";
           break;
         case 10:
           aii = 0;
-          bottom_positon = "65%";
+          bottom_positon = "73%";
           left_positon = "65%";
           break;
         case 9:
           aii = 11;
-          bottom_positon = "66%";
+          bottom_positon = "72%";
           left_positon = "39%";
           break;
         case 8:
@@ -172,12 +199,12 @@ Page({
           break;
         case 7:
           aii = 9;
-          bottom_positon = "50%";
+          bottom_positon = "55%";
           left_positon = "73%";
           break;
         case 6:
           aii = 8;
-          bottom_positon = "12.4%";
+          bottom_positon = "9.4%";
           left_positon = "37%";
           break;
         case 5:
@@ -187,7 +214,7 @@ Page({
           break;
         case 4:
           aii = 6;
-          bottom_positon = "48%";
+          bottom_positon = "51%";
           left_positon = "33%";
           break;
         case 3:
@@ -197,17 +224,17 @@ Page({
           break;
         case 2:
           aii = 4;
-          bottom_positon = "36%";
+          bottom_positon = "38%";
           left_positon = "67%";
           break;
         case 1:
           aii = 3;
-          bottom_positon = "75.5%";
+          bottom_positon = "83.5%";
           left_positon = "7%";
           break;
         case 0:
           aii = 2;
-          bottom_positon = "65%";
+          bottom_positon = "73%";
           left_positon = "65%";
           break;
         default:
@@ -236,21 +263,21 @@ Page({
       case 0:
         cur = len - 2
         aii = index;
-        bottom_positon = "21%";
+        bottom_positon = "22%";
         left_positon = "39%";
         break;
       case 1:
         cur = len - 1
         aii = index;
         tit = index;
-        bottom_positon = "8%";
+        bottom_positon = "5%";
         left_positon = "25%";
         break;
       case 11:
         cur = len - 3
         aii = index;
         tit = index;
-        bottom_positon = "66%";
+        bottom_positon = "72%";
         left_positon = "39%";
         console.log('123456789');
         break;
@@ -265,14 +292,14 @@ Page({
         cur = len - 5
         aii = index;
         tit = index;
-        bottom_positon = "50%";
+        bottom_positon = "55%";
         left_positon = "73%";
         break;
       case 8:
         cur = len - 6
         aii = index;
         tit = index;
-        bottom_positon = "12.4%";
+        bottom_positon = "9.4%";
         left_positon = "37%";
         break;
       case 7:
@@ -286,7 +313,7 @@ Page({
         cur = len - 8
         aii = index;
         tit = index;
-        bottom_positon = "48%";
+        bottom_positon = "51%";
         left_positon = "33%";
         break;
       case 5:
@@ -300,21 +327,21 @@ Page({
         cur = len - 10
         aii = index;
         tit = index;
-        bottom_positon = "36%";
+        bottom_positon = "38%";
         left_positon = "67%";
         break;
       case 3:
         cur = len - 11
         aii = index;
         tit = index;
-        bottom_positon = "75.5%";
+        bottom_positon = "83.5%";
         left_positon = "7%";
         break;
       case 2:
         cur = len - 12
         aii = index;
         tit = index;
-        bottom_positon = "65%";
+        bottom_positon = "73%";
         left_positon = "65%";
         break;
      
