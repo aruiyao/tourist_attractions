@@ -10,83 +10,84 @@ Page({
     // duration: 1000,
     animationData: {},
     hidden: false,
-    current: 0,
-    activeImgIndex: 2,
-    titleImgSrc:"https://www.uumon.com/rgtImg/icon/img/3.png",
+    current: 11,
+    activeImgIndex: 1,
+    titleImgSrc:"https://www.uumon.com/rgtImg/img/222.png",
     bgm: 'https://www.uumon.com/rgtImg/icon/img/music.png',
     movies: [
       {
         activeUrl: 'https://www.uumon.com/rgtImg/img/1-2.png',
         quietUrl: 'https://www.uumon.com/rgtImg/img/1-1.png',
-        titleImgUrl: 'https://www.uumon.com/rgtImg/img/1.png'
+        titleImgUrl: 'https://www.uumon.com/rgtImg/img/111.png'
       },
       {
         activeUrl: 'https://www.uumon.com/rgtImg/img/2-2.png',
         quietUrl: 'https://www.uumon.com/rgtImg/img/2-1.png',
-        titleImgUrl: 'https://www.uumon.com/rgtImg/img/2.png'
+        titleImgUrl: 'https://www.uumon.com/rgtImg/img/222.png'
       },
       {
         activeUrl: 'https://www.uumon.com/rgtImg/img/3-2.png',
         quietUrl: 'https://www.uumon.com/rgtImg/img/3-1.png',
-        titleImgUrl: 'https://www.uumon.com/rgtImg/img/3.png'
+        titleImgUrl: 'https://www.uumon.com/rgtImg/img/333.png'
       },
       {
         activeUrl: 'https://www.uumon.com/rgtImg/img/4-2.png',
         quietUrl: 'https://www.uumon.com/rgtImg/img/4-1.png',
-        titleImgUrl: 'https://www.uumon.com/rgtImg/img/4.png'
+        titleImgUrl: 'https://www.uumon.com/rgtImg/img/444.png'
       },
       {
         activeUrl: 'https://www.uumon.com/rgtImg/img/5-2.png',
         quietUrl: 'https://www.uumon.com/rgtImg/img/5-1.png',
-        titleImgUrl: 'https://www.uumon.com/rgtImg/icon/img/5.png'
+        titleImgUrl: 'https://www.uumon.com/rgtImg/img/555.png'
       },
       {
         activeUrl: 'https://www.uumon.com/rgtImg/img/6-2.png',
         quietUrl: 'https://www.uumon.com/rgtImg/img/6-1.png',
-        titleImgUrl: 'https://www.uumon.com/rgtImg/img/6.png'
+        titleImgUrl: 'https://www.uumon.com/rgtImg/img/666.png'
       },
       {
         activeUrl: 'https://www.uumon.com/rgtImg/img/7-2.png',
         quietUrl: 'https://www.uumon.com/rgtImg/img/7-1.png',
-        titleImgUrl: 'https://www.uumon.com/rgtImg/img/7.png'
+        titleImgUrl: 'https://www.uumon.com/rgtImg/img/777.png'
       },
       {
         activeUrl: 'https://www.uumon.com/rgtImg/img/8-2.png',
         quietUrl: 'https://www.uumon.com/rgtImg/img/8-1.png',
-        titleImgUrl: 'https://www.uumon.com/rgtImg/img/8.png'
+        titleImgUrl: 'https://www.uumon.com/rgtImg/img/888.png'
       },
       {
         activeUrl: 'https://www.uumon.com/rgtImg/img/9-2.png',
         quietUrl: 'https://www.uumon.com/rgtImg/img/9-1.png',
-        titleImgUrl: 'https://www.uumon.com/rgtImg/img/9.png'
+        titleImgUrl: 'https://www.uumon.com/rgtImg/img/999.png'
       },
       {
         activeUrl: 'https://www.uumon.com/rgtImg/img/10-2.png',
         quietUrl: 'https://www.uumon.com/rgtImg/img/10-1.png',
-        titleImgUrl: 'https://www.uumon.com/rgtImg/img/10.png'
+        titleImgUrl: 'https://www.uumon.com/rgtImg/img/1010.png'
       },
       {
         activeUrl: 'https://www.uumon.com/rgtImg/img/11-2.png',
         quietUrl: 'https://www.uumon.com/rgtImg/img/11-1.png',
-        titleImgUrl: 'https://www.uumon.com/rgtImg/img/11.png'
+        titleImgUrl: 'https://www.uumon.com/rgtImg/img/1111.png'
       },
       {
         activeUrl: 'https://www.uumon.com/rgtImg/img/12-2.png',
         quietUrl: 'https://www.uumon.com/rgtImg/img/12-1.png',
-        titleImgUrl: 'https://www.uumon.com/rgtImg/img/12.png'
+        titleImgUrl: 'https://www.uumon.com/rgtImg/img/1212.png'
       }
     ],
     audioAction: {
       method: 'pause'
     },
     isClose: true,
-    bighash_bottom: '66%',
-    bighash_left: '64.5%',
-    but_3:false
+    bighash_bottom: '6%',
+    bighash_left: '25%',
+   // but_3:false
+    activeImgIndex: 1
   },
   bindfollow: function (e) {
     var animation = wx.createAnimation({
-      duration: 2000,
+      duration: 3000,
       timingFunction: 'linear',
     })
 
@@ -102,7 +103,7 @@ Page({
       this.setData({
         hidden: true
       })
-    }.bind(this), 2000)
+    }.bind(this), 3000)
 
   },
   
@@ -142,7 +143,7 @@ Page({
   onLoad: function (options) {
     setTimeout(function () {
       this.bindfollow();
-    }.bind(this), 1000)
+    }.bind(this), 2000)
     
     this.audioPlay();
     let that = this;

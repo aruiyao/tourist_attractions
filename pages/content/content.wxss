@@ -242,15 +242,13 @@ page {
 }
 .detail_img{
   width: 95%;
-  height: 140rpx;
   margin: 0 auto;
 }
 .wenbaosuo_img{
-  width: 95%;
-  height: 200rpx;
-  margin: 0 auto;
+  width: 66%;
+  height: 173rpx;
+  margin: 25rpx 0 0 32%;
 }
 .bitmpa_img {
   width: 100%;
-  height: 100%
 }

@@ -65,13 +65,13 @@ Page({
         ticket_policy: "免费",
         phone: "",
         traffic: "乘坐地铁4号线在人民桥南站下车，乘坐公交游4路、1路、5路在团结桥北站下车。乘1号线到乐桥站下车，从5号口出来即可。乘8、309等到饮马桥东站下车；或乘1、5、102、308、933、游2路、游4路等到三元坊站下车。",
-        detail_img: "https://www.uumon.com/rgtImg/img/detail/天香小筑.png"
+        detail_img: "https://www.uumon.com/rgtImg/detail/天香小筑.png"
       },
       {
         name: "瑞光塔",
         isHave3D: true,
-        bgm: "https://www.uumon.com/rgtImg/bgm/rgt.mp3",
-        microShowImg: "../img/detail/micoshow_rgt.jpg",
+        bgm:"https://www.uumon.com/rgtImg/bgm/rgt.mp3",
+        microShowImg: "https://www.uumon.com/rgtImg/detail/micoshow_rgt.jpg",
         imgs: [{
             url: 'https://www.uumon.com/rgtImg/img/detail/瑞光塔1.jpg',
           },
@@ -86,7 +86,7 @@ Page({
         ticket_policy: "需先购买盘门景区门票40元，进入景区登瑞光塔6元。",
         phone: "0512-65260004",
         traffic: "乘70路东线、70路内环在盘门站下车，或乘39路、47路、305路、游2路、游5北线/南线、949路等公交车在盘门景区北站下车。",
-        detail_img: "https://www.uumon.com/rgtImg/img/detail/瑞光塔.png"
+        detail_img: "https://www.uumon.com/rgtImg/detail/瑞光塔.png"
       },
       {
         name: "太平天国忠王府",
@@ -107,7 +107,7 @@ Page({
         ticket_policy: "免费",
         phone: "0512-67575666",
         traffic: "乘坐游1、2、5线、202路、313路、301、40路、55路、309路、923路、529路、811路可到达。",
-        detail_img: "https://www.uumon.com/rgtImg/img/detail/太平天国忠王府.png"
+        detail_img: "https://www.uumon.com/rgtImg/detail/太平天国忠王府.png"
       },
       {
         name: "虎丘塔",
@@ -128,7 +128,7 @@ Page({
         phone: "0512-67232305；\n0512-65323488",
         address: "苏州市虎丘区山门内8号",
         traffic: "公共交通：\n南门入口：146、游1、游2路虎丘首末站；\n北门入口：32、快线3号虎丘北门站\n\n自驾线路：\n1.杭州方向苏嘉杭苏高速苏州园区出口下高速，上南环东路高架，南环西路高架，福星路出口下，走桐泾南路，桐泾北路，转虎丘路，可达景区南大门。苏嘉杭高速苏州园区出口下高速，上南环东路高架，南环西路高架，西环路高架，在北环西路出口下高架，走桐泾北路，转虎丘路，可达景区南大门。\n2.上海方向沪宁高速苏州东出口下，转国道312直达虎丘北大门。\n3.南京方向沪宁高速苏州新区出口下，经西环高架转城北西路直达虎丘北",
-        detail_img: "https://www.uumon.com/rgtImg/img/detail/虎丘塔.png"
+        detail_img: "https://www.uumon.com/rgtImg/detail/虎丘.png"
       },
       {
         name: "罗汉院双塔及正殿遗址",
@@ -149,7 +149,7 @@ Page({
         phone: "0512-65225210",
         address: "江苏省苏州凤凰街定慧寺巷34号",
         traffic: "可乘坐地铁1号线至临顿路站，下车后步行即可到达。",
-        detail_img: "https://www.uumon.com/rgtImg/img/detail/罗汉院双塔及正殿遗址.png"
+        detail_img: "https://www.uumon.com/rgtImg/detail/罗汉院双塔及正殿遗址.png"
       },
       {
         name: "东吴大学（旧址）",
@@ -170,7 +170,7 @@ Page({
         ticket_policy: "免费",
         phone: "0512-65113180\n0512-67507948\n0512-67504739",
         traffic: "可乘坐地铁1号线至相门站，下车后步行即可到达。",
-        detail_img: "https://www.uumon.com/rgtImg/img/detail/东吴大学（旧址）.png"
+        detail_img: "https://www.uumon.com/rgtImg/detail/东吴大学（旧址）.png"
       },
       {
         name: "俞樾旧居（曲园）",
@@ -194,7 +194,7 @@ Page({
         ticket_policy: "免费",
         phone: "0512-65221406",
         traffic: "1.乘地铁1号线到乐桥站下车，8号口出，步行10分钟左右到达。\n2.乘1路、8路、38路、101路、游4路/长线等公交车到乐桥北站下车。",
-        detail_img: "https://www.uumon.com/rgtImg/img/detail/俞樾旧居（曲园）.png"
+        detail_img: "https://www.uumon.com/rgtImg/detail/俞樾旧居（曲园）.png"
       },
       {
         name: "开元寺无梁殿",
@@ -215,7 +215,7 @@ Page({
         ticket_policy: "免费",
         phone: "",
         traffic: "[途经公交]47路   932路   318路   305路   935路   949路",
-        detail_img: "https://www.uumon.com/rgtImg/img/detail/开元寺无梁殿.png"
+        detail_img: "https://www.uumon.com/rgtImg/detail/开元寺无梁殿.png"
       },
       {
         name: "文庙大成殿",
@@ -236,7 +236,7 @@ Page({
         ticket_policy: "免费",
         phone: "0512-65197203",
         traffic: "可乘坐地铁4号线至三元坊站，下车后步行即可到达。",
-        detail_img: "https://www.uumon.com/rgtImg/img/detail/文庙大成殿.png"
+        detail_img: "https://www.uumon.com/rgtImg/detail/文庙大成殿.png"
       },
       {
         name: "全晋会馆",
@@ -257,7 +257,7 @@ Page({
         ticket_policy: "20/人",
         phone: "0512-65120473",
         traffic: "可乘坐地铁1号线至相门站，下车后步行即可到达。",
-        detail_img: "https://www.uumon.com/rgtImg/img/detail/全晋会馆.png"
+        detail_img: "https://www.uumon.com/rgtImg/detail/全晋会馆.png"
       },
       {
         name: "甲辰巷砖塔",
@@ -278,7 +278,7 @@ Page({
         ticket_policy: "免费",
         phone: "",
         traffic: "可乘坐地铁1号线至相门站，下车后步行即可到达。",
-        detail_img: "https://www.uumon.com/rgtImg/img/detail/甲辰巷砖塔.png"
+        detail_img: "https://www.uumon.com/rgtImg/detail/甲辰巷砖塔.png"
       },
       {
         name: "报恩寺塔（北寺塔）",
@@ -301,7 +301,7 @@ Page({
         ticket_policy: "免费",
         phone: "",
         traffic: "可乘1路、5路、8路、101路、313路、602路、游4路等公交车到北寺塔站下车。",
-        detail_img: "https://www.uumon.com/rgtImg/img/detail/报恩寺塔（北寺塔）.png"
+        detail_img: "https://www.uumon.com/rgtImg/detail/报恩寺塔（北寺塔）.png"
       },
 
 
@@ -378,7 +378,6 @@ Page({
     this.innerAudioContext = wx.createInnerAudioContext();
    
     this.innerAudioContext.onPlay(() => {
-      console.log("onPlay2");
       this.updateTime();
     });
     wx.downloadFile({

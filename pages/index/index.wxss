@@ -179,6 +179,9 @@ page {
 .content {
   width: 36%;
   height: 79rpx;
+  z-index: 999;
+position: relative;
+
 }
 
 .swiper{

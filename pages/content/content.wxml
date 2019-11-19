@@ -1,6 +1,6 @@
 <view style="background-image: url('https://www.uumon.com/rgtImg/detail/背景 copy@2x.png');background-size:100% 50%;position:fixed">
   <view class="fixed-area">
-    <image class="music" src='https://www.uumon.com/rgtImg/icon/img/music.png' bindtap="audioPlay" wx:if="{{isPlay}}"></image>
+    <!-- <image class="music" src='https://www.uumon.com/rgtImg/icon/img/music.png' bindtap="audioPlay" wx:if="{{isPlay}}"></image> -->
     <image class="music" src='https://www.uumon.com/rgtImg/icon/img/stop.png' bindtap="audioPlay" wx:if="{{!isPlay}}"></image>
     <!-- 导航栏 -->
     <view class="rectangle">
@@ -58,10 +58,10 @@
   <scroll-view scroll-y="true" scroll-into-view="{{toView}}" style="height:{{winHeight}}" class="scroll-area" scroll-with-animation="{{true}}" bindscroll="scrollContent">
     <view style="padding-bottom:50rpx">
        <view class="detail_img">
-        <image class="bitmpa_img" src="{{detail_img}}"></image>
+        <image class="bitmpa_img" src="{{detail_img}}" mode="widthFix"></image>
       </view>
       <!-- 详情介绍 -->
-      <view class="paragraph clearfix" id="m1">
+      <view class="paragraph clearfix" id="m1" style="padding-top:20rpx">
         <image src="https://www.uumon.com/rgtImg/detail/选中 copy@2x.png" class="arrow" />
         <image src="https://www.uumon.com/rgtImg/detail/详情介绍@2x.png" class="p-title" />
       </view>
@@ -128,7 +128,7 @@
         <view>7.其他有碍游客安全影响游客游览者谢绝进入景区。</view>
       </view>
       <view class="wenbaosuo_img">
-        <image class="bitmpa_img" src="../img/detail/增加文保所元素.png"></image>
+        <image class="bitmpa_img" src="https://www.uumon.com/rgtImg/detail/增加文保所元素.png"></image>
       </view>
     </view>
     <view class="bitmap">
