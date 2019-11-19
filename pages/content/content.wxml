@@ -57,8 +57,8 @@
   </view>
   <scroll-view scroll-y="true" scroll-into-view="{{toView}}" style="height:{{winHeight}}" class="scroll-area" scroll-with-animation="{{true}}" bindscroll="scrollContent">
     <view style="padding-bottom:50rpx">
-      <view class="content padding-top-20">
-        <text decode="{{true}}" style="line-height:50rpx">{{detailtop}}</text>
+       <view class="detail_img">
+        <image class="bitmpa_img" src="{{detail_img}}"></image>
       </view>
       <!-- 详情介绍 -->
       <view class="paragraph clearfix" id="m1">
@@ -126,9 +126,6 @@
         <view>5.团队参观请提前预约。</view>
         <view>6.酗酒者、衣容不整者、无行为能力或限制行为能力且无监护人陪伴者谢绝进去景区。</view>
         <view>7.其他有碍游客安全影响游客游览者谢绝进入景区。</view>
-      </view>
-      <view class="detail_img">
-        <image class="bitmpa_img" src="{{detail_img}}"></image>
       </view>
       <view class="wenbaosuo_img">
         <image class="bitmpa_img" src="../img/detail/增加文保所元素.png"></image>
