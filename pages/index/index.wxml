@@ -1,6 +1,6 @@
 
 <view class="bbg_box" style="background-image: url('https://www.uumon.com/rgtImg/icon/img/bg.png'); background-size: 100% 100%" bindtap='bindfollow' animation="{{animationData}}" hidden='{{hidden}}'>
-   <image class="bbg" src='https://www.uumon.com/rgtImg/img/bbg2.png' ></image> 
+   <image class="bbg" src='https://www.uumon.com/rgtImg/img/bbg2.png' mode="widthFix"></image> 
 </view>
 <view class="bigbg" style="background-image: url('https://www.uumon.com/rgtImg/icon/img/bg.png'); background-size: 100% 100%">
   <!-- <image class='bg' src='../img/bg.png' style='background-size: 100% 100%'></image> -->
@@ -10,7 +10,7 @@
     <view class="title_box">
       <image class="title" src="{{titleImgSrc}}"></image>
     </view>
-    <view class="map_box" style="background-image: url('https://www.uumon.com/rgtImg/icon/img/map.png'); background-size: 100% 100%">
+    <view class="map_box" style="background-image: url('https://www.uumon.com/rgtImg/img/map.png'); background-size: 100% 100%">
       <!--<image class="map" src="https://www.uumon.com/rgtImg/icon/img/map.png"></image>-->
     
       <image class="bighash" src="https://www.uumon.com/rgtImg/img/bighash.gif" style="bottom:{{bighash_bottom}};left:{{bighash_left}}"></image>

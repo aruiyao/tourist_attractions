@@ -1,7 +1,7 @@
 <view style="background-image: url('https://www.uumon.com/rgtImg/detail/背景 copy@2x.png');background-size:100% 50%;position:fixed">
   <view class="fixed-area">
     <!-- <image class="music" src='https://www.uumon.com/rgtImg/icon/img/music.png' bindtap="audioPlay" wx:if="{{isPlay}}"></image> -->
-    <image class="music" src='https://www.uumon.com/rgtImg/icon/img/stop.png' bindtap="audioPlay" wx:if="{{!isPlay}}"></image>
+    <!-- <image class="music" src='https://www.uumon.com/rgtImg/icon/img/stop.png' bindtap="audioPlay" wx:if="{{!isPlay}}"></image> -->
     <!-- 导航栏 -->
     <view class="rectangle">
       <swiper display-multiple-items='4.5' class='swiper-detail'>
@@ -42,7 +42,7 @@
           <view class="dot{{index == currentSwiper ? ' active' : ''}}"></view>
         </block>
       </view>
-      <image src="https://www.uumon.com/rgtImg/detail/敬请期待@2x.png" class="wait" wx:if='{{!isHave3D}}' />
+      <!-- <image src="https://www.uumon.com/rgtImg/detail/敬请期待@2x.png" class="wait" wx:if='{{!isHave3D}}' /> -->
       <image src="{{microShowImg}}" class="into3D" wx:if='{{isHave3D}}' />
     </view>
     <!-- 语音 -->
@@ -74,7 +74,7 @@
         <image src="https://www.uumon.com/rgtImg/detail/全景漫游@2x.png" class="p-title" />
       </view>
       <view class="content padding-top-36">
-        <view style="background-image: url({{panorama}}); background-size: 100% 100%;text-align:center;height:500rpx">
+        <view bindtap="goToPanorama" style="background-image: url({{panorama}}); background-size: 100% 100%;text-align:center;height:500rpx">
           <image src="https://www.uumon.com/rgtImg/detail/进去漫游@2x.png" class="roam" />
         </view>
       </view>
@@ -128,11 +128,11 @@
         <view>7.其他有碍游客安全影响游客游览者谢绝进入景区。</view>
       </view>
       <view class="wenbaosuo_img">
-        <image class="bitmpa_img" src="https://www.uumon.com/rgtImg/detail/增加文保所元素.png"></image>
+        <image class="bottom_img" src="https://www.uumon.com/rgtImg/detail/增加文保所元素.png"></image>
       </view>
     </view>
     <view class="bitmap">
-      <image class="bitmpa_img" src="https://www.uumon.com/rgtImg/detail/Bitmap@2x(1).png"></image>
+      <image class="bottom_img" src="https://www.uumon.com/rgtImg/detail/Bitmap@2x(1).png"></image>
     </view>
   </scroll-view>
 </view>

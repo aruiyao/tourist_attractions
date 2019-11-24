@@ -4,7 +4,6 @@
    left: 45%;
    background-color: transparent;
    width: 40%; 
-   height: 32%;
    margin: -50px 0 0 -50px;
 }
 .bbg_box{
@@ -42,11 +41,11 @@ page {
 .big_box {
   position: relative;
   top: 0;
-  padding: 15rpx 20rpx 0rpx 20rpx;
+  padding: 15rpx 20rpx 0rpx 5rpx;
   text-align: center;
   margin: 0rpx 0rpx 0rpx 100rpx;
-  width: 70%;
-  height: 72%;
+  width: 79%;
+  height: 79%;
   
 }
 
@@ -63,8 +62,8 @@ page {
 
 .bighash {
   position: absolute;
-  width: 80rpx;
-  height: 80rpx;
+  width: 68rpx;
+  height: 68rpx;
   z-index: 9999;
   transform: none;
   transition: all 0.2s ease-in 0s;
@@ -74,15 +73,15 @@ page {
   position: absolute;
   width: 35rpx;
   height: 40rpx;
-  top: 10%;
-  left: 11%;
+  top: 6%;
+  left: 10%;
 }
 
 .hash2 {
   position: absolute;
   width: 35rpx;
   height: 40rpx;
-  top: 21%;
+  top: 17%;
   left: 43%;
 }
 
@@ -90,15 +89,15 @@ page {
   position: absolute;
   width: 35rpx;
   height: 40rpx;
-  top: 20.5%;
-  left: 68.5%;
+  top: 18.5%;
+  left: 71.5%;
 }
 
 .hash4 {
   position: absolute;
   width: 35rpx;
   height: 40rpx;
-  top: 41.5%;
+  top: 37.5%;
   left: 38%;
 }
 
@@ -106,39 +105,39 @@ page {
   position: absolute;
   width: 35rpx;
   height: 40rpx;
-  top: 39.5%;
-  left: 77%;
+  top: 35.5%;
+  left: 76%;
 }
 
 .hash6 {
   position: absolute;
   width: 35rpx;
   height: 40rpx;
-  top: 50%;
-  left: 76%;
+  top: 49.5%;
+  left: 79%;
 }
 
 .hash7 {
   position: absolute;
   width: 35rpx;
   height: 40rpx;
-  top: 55%;
-  left: 71%;
+  top: 56%;
+  left: 76%;
 }
 
 .hash8 {
   position: absolute;
   width: 35rpx;
   height: 40rpx;
-  top: 59.5%;
+  top: 64.5%;
   left: 79%;
 }
 
 .hash9 {
   position: absolute;
-  width: 35rpx;
-  height: 40rpx;
-  top: 71.5%;
+  width: 29.75rpx;
+  height: 34rpx;
+  top: 72.5%;
   left: 43.25%;
 }
 
@@ -146,23 +145,23 @@ page {
   position: absolute;
   width: 35rpx;
   height: 40rpx;
-  top: 81%;
-  left: 28%;
+  top: 80%;
+  left: 27.5%;
 }
 
 .hash11 {
   position: absolute;
   width: 35rpx;
   height: 40rpx;
-  top: 83.25%;
-  left: 41%;
+  top: 80.25%;
+  left: 43%;
 }
 .hash12 {
   position: absolute;
   width: 35rpx;
   height: 40rpx;
-  top: 88%;
-  left: 29%;
+  top: 86%;
+  left: 31%;
 }
 .content_box {
   width: 99%;
@@ -177,7 +176,7 @@ page {
 }
 
 .content {
-  width: 36%;
+  width: 32%;
   height: 79rpx;
   z-index: 999;
 position: relative;

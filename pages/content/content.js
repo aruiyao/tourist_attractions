@@ -70,7 +70,7 @@ Page({
       {
         name: "瑞光塔",
         isHave3D: true,
-        bgm:"https://www.uumon.com/rgtImg/bgm/rgt.mp3",
+        bgm: "https://www.uumon.com/rgtImg/bgm/rgt.mp3",
         microShowImg: "https://www.uumon.com/rgtImg/detail/micoshow_rgt.jpg",
         imgs: [{
             url: 'https://www.uumon.com/rgtImg/img/detail/瑞光塔1.jpg',
@@ -118,7 +118,7 @@ Page({
             url: 'https://www.uumon.com/rgtImg/img/detail/虎丘塔1.jpg',
           },
           {
-            url: 'https://www.uumon.com/rgtImg/img/detail/虎丘塔2.jpg',
+            url: 'https://www.uumon.com/rgtImg/img/detail/虎丘塔2.jpeg',
           }
         ],
         detail: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;虎丘山风景名胜区，位于苏州古城西北角的虎丘风景名胜区，有“吴中第一名胜”、“吴中第一山”的美誉。虎丘塔位于虎丘山山门内，始建于959年，落成于961年，世界第二斜塔，中国第一斜塔，1961年被列为全国重点保护文物保护单位。\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;虎丘塔，仿楼阁式砖木套筒结构，七级八面，塔身全砖砌。屋檐为仿木斗拱，飞檐起翘，塔内两层塔壁，仿佛小塔外面又套了一座大塔，其层间的连接以叠涩砌作的砖砌体连接上下和左右。",
@@ -160,7 +160,7 @@ Page({
             url: 'https://www.uumon.com/rgtImg/img/detail/东吴大学1.jpg',
           },
           {
-            url: 'https://www.uumon.com/rgtImg/img/detail/东吴大学2.jpg',
+            url: 'https://www.uumon.com/rgtImg/img/detail/东吴大学2.jpeg',
           }
         ],
         detail: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;东吴大学，现苏州大学的前身。同治十年，美国基督教监理公会在苏州设立存养书院，光绪二十七年，建立东吴大学堂，辛亥革命后改称东吴大学。东吴大学旧址2013年被列为全国重点文保单位。\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;东吴大学总平面，呈纵长方形，以钟楼为中心，钟楼又称“林堂”，建于光绪二十九年。主要建筑分布在钟楼前面草坪操场的北、西、东三面。现存14组欧式建筑，建筑各具风格，有欧洲古典式，有中世纪城堡式，有美国教堂式，至今保持原貌。",
@@ -202,7 +202,7 @@ Page({
         bgm: "",
         microShowImg: "",
         imgs: [{
-            url: 'https://www.uumon.com/rgtImg/img/detail/开元寺无梁殿1.jpg',
+            url: 'https://www.uumon.com/rgtImg/img/detail/开元寺无梁殿1.jpeg',
           },
           {
             url: 'https://www.uumon.com/rgtImg/img/detail/开元寺无梁殿2.jpg',
@@ -303,13 +303,12 @@ Page({
         traffic: "可乘1路、5路、8路、101路、313路、602路、游4路等公交车到北寺塔站下车。",
         detail_img: "https://www.uumon.com/rgtImg/detail/报恩寺塔（北寺塔）.png"
       },
-
-
     ]
   },
   onLoad: function (options) {
     let that = this;
-    let pageConfig = this.data.pageConfig[options.chooseIndex];
+    that.chooseIndex = options.chooseIndex
+    let pageConfig = this.data.pageConfig[that.chooseIndex];
     this.setData({
       imgs: pageConfig.imgs,
       detail: pageConfig.detail,
@@ -376,7 +375,7 @@ Page({
       }
     });
     this.innerAudioContext = wx.createInnerAudioContext();
-   
+
     this.innerAudioContext.onPlay(() => {
       this.updateTime();
     });
@@ -388,8 +387,8 @@ Page({
         this.innerAudioContext.autoplay = true;
       }
     })
-    
-   
+
+
     this.innerAudioContext.onError(res => {
       console.log(res.errMsg);
       console.log(res.errCode);
@@ -398,6 +397,15 @@ Page({
   },
   onUnload() {
     this.innerAudioContext.destroy()
+  },
+  onShow() {
+    this.innerAudioContext.play();
+  },
+  goToPanorama() {
+    this.innerAudioContext.pause();
+    wx.navigateTo({
+      url: '../panorama/panorama?chooseIndex=' + this.chooseIndex
+    })
   },
   audioPlay() {
     this.data.isPlay ? this.innerAudioContext.pause() : this.innerAudioContext.play();

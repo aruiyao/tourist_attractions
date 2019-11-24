@@ -80,8 +80,8 @@ Page({
       method: 'pause'
     },
     isClose: true,
-    bighash_bottom: '6%',
-    bighash_left: '25%',
+    bighash_bottom: '9%',
+    bighash_left: '28%',
    // but_3:false
     activeImgIndex: 1
   },
@@ -180,33 +180,33 @@ Page({
       switch (e.detail.current) {
         case 11:
           aii = 1;
-          bottom_positon = "5%";
-          left_positon = "25%";
+          bottom_positon = "9%";
+          left_positon = "28%";
           break;
         case 10:
           aii = 0;
-          bottom_positon = "73%";
-          left_positon = "65%";
+          bottom_positon = "76%";
+          left_positon = "68%";
           break;
         case 9:
           aii = 11;
-          bottom_positon = "72%";
-          left_positon = "39%";
+          bottom_positon = "77%";
+          left_positon = "40%";
           break;
         case 8:
           aii = 10;
-          bottom_positon = "41.5%";
-          left_positon = "72%";
+          bottom_positon = "45%";
+          left_positon = "76%";
           break;
         case 7:
           aii = 9;
-          bottom_positon = "55%";
+          bottom_positon = "59%";
           left_positon = "73%";
           break;
         case 6:
           aii = 8;
-          bottom_positon = "9.4%";
-          left_positon = "37%";
+          bottom_positon = "14.4%";
+          left_positon = "40%";
           break;
         case 5:
           aii = 7;
@@ -215,28 +215,28 @@ Page({
           break;
         case 4:
           aii = 6;
-          bottom_positon = "51%";
-          left_positon = "33%";
+          bottom_positon = "57%";
+          left_positon = "35%";
           break;
         case 3:
           aii = 5;
-          bottom_positon = "32%";
-          left_positon = "74.7%";
+          bottom_positon = "30%";
+          left_positon = "76%";
           break;
         case 2:
           aii = 4;
-          bottom_positon = "38%";
-          left_positon = "67%";
+          bottom_positon = "39%";
+          left_positon = "73%";
           break;
         case 1:
           aii = 3;
-          bottom_positon = "83.5%";
+          bottom_positon = "88.5%";
           left_positon = "7%";
           break;
         case 0:
           aii = 2;
-          bottom_positon = "73%";
-          left_positon = "65%";
+          bottom_positon = "76%";
+          left_positon = "68%";
           break;
         default:
           aii = e.detail.current + 2;
@@ -265,43 +265,43 @@ Page({
         cur = len - 2
         aii = index;
         bottom_positon = "22%";
-        left_positon = "39%";
+        left_positon = "40%";
         break;
       case 1:
         cur = len - 1
         aii = index;
         tit = index;
-        bottom_positon = "5%";
-        left_positon = "25%";
+        bottom_positon = "9%";
+        left_positon = "28%";
         break;
       case 11:
         cur = len - 3
         aii = index;
         tit = index;
-        bottom_positon = "72%";
-        left_positon = "39%";
+        bottom_positon = "77%";
+        left_positon = "40%";
         console.log('123456789');
         break;
       case 10:
         cur = len - 4
         aii = index;
         tit = index;
-        bottom_positon = "41.5%";
-        left_positon = "72%";
+        bottom_positon = "45%";
+        left_positon = "76%";
         break;
       case 9:
         cur = len - 5
         aii = index;
         tit = index;
-        bottom_positon = "55%";
+        bottom_positon = "59%";
         left_positon = "73%";
         break;
       case 8:
         cur = len - 6
         aii = index;
         tit = index;
-        bottom_positon = "9.4%";
-        left_positon = "37%";
+        bottom_positon = "14.4%";
+        left_positon = "40%";
         break;
       case 7:
         cur = len - 7
@@ -314,36 +314,36 @@ Page({
         cur = len - 8
         aii = index;
         tit = index;
-        bottom_positon = "51%";
-        left_positon = "33%";
+        bottom_positon = "57%";
+        left_positon = "35%";
         break;
       case 5:
         cur = len - 9
         aii = index;
         tit = index;
-        bottom_positon = "32%";
-        left_positon = "74.7%";
+        bottom_positon = "30%";
+        left_positon = "76%";
         break;
       case 4:
         cur = len - 10
         aii = index;
         tit = index;
-        bottom_positon = "38%";
-        left_positon = "67%";
+        bottom_positon = "39%";
+        left_positon = "73%";
         break;
       case 3:
         cur = len - 11
         aii = index;
         tit = index;
-        bottom_positon = "83.5%";
+        bottom_positon = "88.5%";
         left_positon = "7%";
         break;
       case 2:
         cur = len - 12
         aii = index;
         tit = index;
-        bottom_positon = "73%";
-        left_positon = "65%";
+        bottom_positon = "76%";
+        left_positon = "68%";
         break;
      
       default:
