@@ -115,14 +115,14 @@ Page({
         bgm: "",
         microShowImg: "",
         imgs: [{
-            url: 'https://www.uumon.com/rgtImg/img/detail/虎丘塔1.jpg',
+            url: 'https://www.uumon.com/rgtImg/img/detail/虎丘塔1.jpeg',
           },
           {
             url: 'https://www.uumon.com/rgtImg/img/detail/虎丘塔2.jpeg',
           }
         ],
         detail: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;虎丘山风景名胜区，位于苏州古城西北角的虎丘风景名胜区，有“吴中第一名胜”、“吴中第一山”的美誉。虎丘塔位于虎丘山山门内，始建于959年，落成于961年，世界第二斜塔，中国第一斜塔，1961年被列为全国重点保护文物保护单位。\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;虎丘塔，仿楼阁式砖木套筒结构，七级八面，塔身全砖砌。屋檐为仿木斗拱，飞檐起翘，塔内两层塔壁，仿佛小塔外面又套了一座大塔，其层间的连接以叠涩砌作的砖砌体连接上下和左右。",
-        panorama: "https://www.uumon.com/rgtImg/img/detail/虎丘塔1.jpg",
+        panorama: "https://www.uumon.com/rgtImg/img/detail/虎丘塔1.jpeg",
         open_time: "1.7:30-17:30（5月1日-10月7日）旺季\n2.7:30-17:00（10月8日-4月30日）淡季",
         ticket_policy: "淡季:60人民币；\n旺季:80人民币 \n半票:6周岁（不含6周岁）～18周岁（含18周岁）\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;未成年人凭居民身份证或学生证等有效证件、全日制大学本科及以下学历学生凭学生证等有效证件、全国60周岁及以上老人（除江苏省外）等群体凭有效证件免票\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6周岁（含6周岁）以下或身高在1.4米（含1.4米）以下儿童、中华人民共和国现役军人凭军人证等有效证件、军队离休干部和退休干部凭离退休干部证、革命伤残军人持国务院颁发的伤残军人证、全国70周岁以上的老年人持《高龄证》或居民身份证、全国“劳动模范”凭苏州市园林和绿化管理局和苏州市总工会发放的“游园证”、全国残疾人员凭有效《残疾证》免票入园。",
         phone: "0512-67232305；\n0512-65323488",
@@ -209,7 +209,7 @@ Page({
           }
         ],
         detail: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;开元寺无梁殿，位于苏州市盘门内东大街，建于1618年，以纯为磨砖嵌缝纵横拱券结构，不用梁柱。2013年被列为全国重点文物保护单位。\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;无梁殿，坐北朝南，两层楼阁式，面阔七间。歇山顶及腰檐敷绿间黄琉璃筒瓦，与清水砖外墙面相映成趣。正面上下各有半圆砖倚柱6根，下置雕花须弥座，转角用垂莲柱。正面正中开拱门三个，左右各置拱形窗。柱间有刻南无阿弥陀佛的华版及大小枋子。明间檐下是砖制斜拱，上泵副檐。绕有雕刻的平座栏杆，图案十分典雅。",
-        panorama: "https://www.uumon.com/rgtImg/img/detail/开元寺无梁殿1.jpg",
+        panorama: "https://www.uumon.com/rgtImg/img/detail/开元寺无梁殿1.jpeg",
         address: "江苏省苏州市盘门内东大街11号。",
         open_time: "",
         ticket_policy: "免费",
@@ -334,17 +334,17 @@ Page({
             });
           })
         }).exec();
-        wx.createSelectorQuery().select('#open-time').boundingClientRect(function (openTime) {
-          wx.createSelectorQuery().select('#ticket').boundingClientRect(function (ticket) {
-            wx.createSelectorQuery().select('#phone').boundingClientRect(function (phone) {
-              that.setData({
-                second_top: ticket.top - openTime.top - 5 + "px",
-                third_top: phone.top - openTime.top - 5 + "px",
-                solid_height: phone.top - openTime.top + "px",
-              })
-            }).exec();
-          }).exec();
-        }).exec();
+        // wx.createSelectorQuery().select('#open-time').boundingClientRect(function (openTime) {
+        //   wx.createSelectorQuery().select('#ticket').boundingClientRect(function (ticket) {
+        //     wx.createSelectorQuery().select('#phone').boundingClientRect(function (phone) {
+        //       that.setData({
+        //         second_top: ticket.top - openTime.top - 5 + "px",
+        //         third_top: phone.top - openTime.top - 5 + "px",
+        //         solid_height: phone.top - openTime.top + "px",
+        //       })
+        //     }).exec();
+        //   }).exec();
+        // }).exec();
 
         wx.createSelectorQuery().select("#m1").boundingClientRect(function (m1) {
           that.setData({
@@ -405,6 +405,63 @@ Page({
     this.innerAudioContext.pause();
     wx.navigateTo({
       url: '../panorama/panorama?chooseIndex=' + this.chooseIndex
+    })
+  },
+  goToMiniProgram() {
+    this.innerAudioContext.pause();
+    let chooseIndex = this.chooseIndex;
+    console.log(chooseIndex)
+    switch (chooseIndex) {
+      case "0":
+        this.appId = ""
+        break;
+      case "1":
+        this.appId = "wx58bf9e4546ab7ba5"
+        break;
+      case "2":
+        this.appId = ""
+        break;
+      case "3":
+        this.appId = ""
+        break;
+      case "4":
+        this.appId = ""
+        break;
+      case "5":
+        this.appId = ""
+        break;
+      case "6":
+        this.appId = ""
+        break;
+      case "7":
+        this.appId = ""
+        break;
+      case "8":
+        this.appId = ""
+        break;
+      case "9":
+        this.appId = ""
+        break;
+      case "10":
+        this.appId = ""
+        break;
+      case "11":
+        this.appId = ""
+        break;
+      default:
+        this.appId = ""
+        break;
+    }
+    wx.navigateToMiniProgram({
+      appId: this.appId,
+      path: 'pages/index/index',
+      extraData: {
+        foo: 'bar'
+      },
+      envVersion: 'develop',
+      success(res) {
+        // 打开成功
+      }
     })
   },
   audioPlay() {

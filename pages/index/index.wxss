@@ -262,10 +262,10 @@ image.quiet {
 }
 
 .music {
-  width: 40rpx;
-  height: 40rpx;
+  width: 55rpx;
+  height: 55rpx;
   position: absolute;
-  top: 64rpx;
+  top: 55rpx;
   right: 34rpx;
 }
 audio{

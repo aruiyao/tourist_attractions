@@ -45,6 +45,6 @@
     <image class="icon" src="https://www.uumon.com/rgtImg/icon/img/hash.png"></image>
   </view>
   <audio src='https://www.uumon.com/rgtImg/bgm/bgm.mp3' loop='true' action="{{audioAction}}" id="myAudio" autoplay='true'></audio>
-  <image class="music" src='https://www.uumon.com/rgtImg/icon/img/music.png' bindtap="audioPlay" wx:if="{{isMute}}"></image>
-  <image class="music" src='https://www.uumon.com/rgtImg/icon/img/stop.png' bindtap="audioPlay" wx:if="{{!isMute}}"></image>
+  <image class="music" src='https://www.uumon.com/rgtImg/img/music.png' bindtap="audioPlay" wx:if="{{isMute}}"></image>
+  <image class="music" src='https://www.uumon.com/rgtImg/img/stop.png' bindtap="audioPlay" wx:if="{{!isMute}}"></image>
 </view>

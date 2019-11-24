@@ -43,7 +43,7 @@
         </block>
       </view>
       <!-- <image src="https://www.uumon.com/rgtImg/detail/敬请期待@2x.png" class="wait" wx:if='{{!isHave3D}}' /> -->
-      <image src="{{microShowImg}}" class="into3D" wx:if='{{isHave3D}}' />
+      <image bindtap="goToMiniProgram" src="{{microShowImg}}" class="into3D" wx:if='{{isHave3D}}' />
     </view>
     <!-- 语音 -->
     <view class="audio-area">
@@ -85,11 +85,11 @@
       </view>
       <view class="content padding-top-20 clearfix">
         <view class="open-right">
-          <view class="open-left" style="height:{{solid_height}}">
+          <!-- <view class="open-left" style="height:{{solid_height}}">
             <image src="https://www.uumon.com/rgtImg/detail/定位点 copy 12@2x.png" />
             <image src="https://www.uumon.com/rgtImg/detail/定位点 copy 12@2x.png" style="top:{{second_top}}" />
             <image src="https://www.uumon.com/rgtImg/detail/定位点 copy 12@2x.png" style="top:{{third_top}}" />
-          </view>
+          </view> -->
           <view class="">
             <view class="FFFFFF" id="open-time">开放时间</view>
             <text decode="{{true}}">{{open_time}}</text>

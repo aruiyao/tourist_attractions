@@ -10,5 +10,8 @@
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   },
+  "navigateToMiniProgramAppIdList": [
+    "wx58bf9e4546ab7ba5"
+  ],
   "sitemapLocation": "sitemap.json"
 }

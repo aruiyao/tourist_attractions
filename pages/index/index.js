@@ -13,7 +13,7 @@ Page({
     current: 11,
     activeImgIndex: 1,
     titleImgSrc:"https://www.uumon.com/rgtImg/img/222.png",
-    bgm: 'https://www.uumon.com/rgtImg/icon/img/music.png',
+    bgm: 'https://www.uumon.com/rgtImg/img/music.png',
     movies: [
       {
         activeUrl: 'https://www.uumon.com/rgtImg/img/1-2.png',
